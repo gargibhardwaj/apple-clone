@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Help-Apple</title>
+<style type="text/css">
+* 
+{ 
+margin-top:0; 
+padding:0; 
+margin-bottom:0;
+margin-right:0;
+margin-left:0;
+}
+
+.maindivone
+{
+position: relative;
+background-color:#353333;
+height:43px;
+}
+.minone
+{
+position: relative;
+background-color:#353333;
+font-family:Calibri;
+left:460px;
+width:50px;
+}
+.mintwo
+{
+position: relative;
+background-color:#353333;
+font-family:Calibri;
+left:540px;
+top:-20px;
+width:50px;
+}
+.minthree
+{
+position: relative;
+background-color:#353333;
+font-family:Calibri;
+left:620px;
+top:-39px;
+width:50px;
+}
+.minfour
+{
+position: relative;
+background-color:#353333;
+font-family:Calibri;
+left:800px;
+top:-58px;
+width:50px;
+}
+.minfive
+{
+position: relative;
+background-color:#353333;
+font-family:Calibri;
+left:860px;
+top:-108px;
+width:50px;
+}
+.wrap{
+	position:relative;
+	left:670px;
+	top:-70px;
+	height:0px;
+}
+
+.search
+{
+	position:relative;
+	left:20px;
+	top:-10px;
+	width:100px;
+	border:1px solid #424444;
+	padding:8px;
+	font-size:14px;
+	outline:none;
+	height:17px;
+}
+.searchbtn{
+	position:relative;
+	left:17px;
+	height:33px;
+	cursor:pointer;
+	font-size:20px;
+}
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+position:relative;
+left:5px;
+border-style:solid;
+border-width:2px;
+border-color:red;
+top:48px;
+  background-color: #353333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width:70px;
+  height:20px;
+}
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  font-family:Calibri;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover 
+{
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.white1
+{
+position: relative;
+background-color:white;
+height:40px;
+}
+
+.footer
+{
+position: relative;
+background-color:#E8E8ED;
+font-family:Calibri;
+font-size:20px;
+height:400px;
+width:100%;
+}
+
+.footertext
+{
+position:relative;
+left:20px;
+top:30px;
+}
+
+.footerposition
+{
+position:relative;
+left:20px;
+}
+
+.menu1
+{
+position:relative;
+top:100px;
+padding:3px;
+text-align:center;
+margin-bottom:3px;
+width:110px;
+}
+
+.menu2
+{
+position:relative;
+top:5px;
+left:350px;
+padding:3px;
+text-align:center;
+margin-bottom:3px;
+width:210px;
+}
+
+.menu4
+{
+position:relative;
+top:-140px;
+left:670px;
+padding:3px;
+text-align:center;
+margin-bottom:3px;
+width:410px;
+}
+
+.bottomtext
+{
+position:relative;
+left:20px;
+top:-110px;
+font-family:Calibri;
+font-size:13px;
+color:gray;
+}
+
+.shoppingone
+{
+position:relative;
+left:30px;
+width:50%;
+font-family:Calibri;
+}
+
+.shoppingtwo
+{
+position:relative;
+left:750px;
+top:-55px;
+width:50%;
+font-family:Calibri;
+}
+
+.shoppingthree
+{
+position:relative;
+left:30px;
+top:110px;
+width:50%;
+font-family:Calibri;
+}
+
+.shoppingfour
+{
+position:relative;
+left:750px;
+top:-7px;
+width:50%;
+font-family:Calibri;
+}
+
+.shoppingfive
+{
+position:relative;
+left:30px;
+top:140px;
+width:50%;
+font-family:Calibri;
+}
+
+.shoppingsix
+{
+position:relative;
+left:750px;
+top:60px;
+width:50%;
+font-family:Calibri;
+}
+
+.shoppingseven
+{
+position:relative;
+left:30px;
+top:195px;
+width:50%;
+font-family:Calibri;
+}
+
+.shoppingeight
+{
+position:relative;
+left:750px;
+top:80px;
+width:50%;
+font-family:Calibri;
+}
+
+.shoppingpage
+{
+position:relative;
+left:30px;
+right:30px;
+}
+
+a:link{text-decoration: none;
+</style>
+</head>
+<body>
+<div class="maindivone">
+<div class="minone"><a href="https://www.apple.com"><img src="images/appleicon.jpg" width="35" height="30"/></a></div>
+<div class="mintwo"><a onMouseOver="this.style.color='#DBD7D6'" onMouseOut="this.style.color='white'" href="https://www.google.com" style="text-decoration:none;Color:white">Mac</a></div>
+<div class="minthree"><a onMouseOver="this.style.color='#DBD7D6'" onMouseOut="this.style.color='white'" href="https://www.google.com" style="text-decoration:none;Color:white">iPhone</a></div>
+<ul> 
+<li> 
+<div class="wrap">
+  <input type="text" class="search" name="" placeholder="search">
+  <input type="image" src="images/searchicon.png" class="searchbtn" onsubmit="this.style.href='https:www.google.com'">
+  <i class="fa fa-search"></i></div>
+</li>
+</ul>
+<div class="minfive">
+<div class="dropdown">
+  <button class="dropbtn">Bag</button>
+  <div class="dropdown-content">
+  <a href="https://www.google.com">View Bag</a>
+  <a href="https://www.google.com">Place Order</a>
+  </div>
+</div>
+</div>
+<div class="shoppingpage">
+<div class="shoppingone"><p><b>How can we help?</b>
+We want you to have the simplest, easiest buying experience possible. <br>But we know you might have a few questions. <br>Read on for details about purchasing, shipping, checking order status, returns, and more.</p></div>
+<div class="shoppingtwo"><p><b>Help yourself.</b>
+Check order status, track or change your order, return items and more.</p></div>
+<div class="shoppingthree"><p><b>iPhone</b>
+Where to Purchase<br>
+How to Purchase<br>
+How to Pick Up Your iPhone<br>
+Activate Your iPhone<br>
+Support and Training<br>
+Additional Information</p></div>
+<div class="shoppingfour"><p><b>Payment & Pricing</b><br>
+Payment<br>
+Tax<br>
+Education Pricing<br>
+U.S. Government <br>
+Promotions, Rebates, and Coupons</p></div>
+<div class="shoppingfive"><p><b>Returns & Refunds</b>
+Returns Policy<br>
+How To Return<br>
+Refunds<br>
+Additional Information</p></div>
+<div class="shoppingsix"><p><b>Shopping Experience</b>
+Shop the Apple Online Store<br>
+Experience the Apple Store app<br>
+Sign Out of the Apple Online Store<br>
+Find an Apple Retail or Reseller Store</p></div>
+<div class="shoppingseven"><p><b>Policies</b>
+Privacy Policy<br>
+Sales and Refund Policy<br>
+Hardware Warranties<br>
+Site Terms of Use<br>
+Software License Information<br>
+Security Policy</p></div>
+<div class="shoppingeight"><p><b>Questions & Answers</b>
+Getting Started<br>
+Content Guidelines<br>
+Following a Question<br>
+Voting for the Best Answer<br>
+Most Interesting Questions</p></div>
+</div>
+
+<div class="white1">
+</div>
+
+<div class="footer">
+<div class="footertext">
+<p style="font-family:Calibri;color:#7B7878;font-size:15px">iPhone XR pricing is after trade‑in of iPhone 7 Plus in good condition. Monthly pricing requires a 24 month installment loan with a 0% APR, and iPhone activation. Applicable 
+ sales tax and fees due at time of purchase. <br> Last payment may be less depending on remaining balance. Additional trade in values require purchase of a new iPhone, subject to 
+ availability and limits. You must be at least 18 years old. In‑store trade in requires presentation of a valid, government‑issued photo ID (local law may require saving 
+ this information). Additional terms from Apple or Apple’s trade in partners may apply </p>
+ <p style="color:gray">__________________________________________________________________________________________________________________________________</p>
+</div>
+<div class="footerposition">
+<div class="menu1">
+<p style="font-size:12px;font-family:Arial;color:#7B7878"  target="_blank"><b>Shop & Learn</b></p><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="page1.html" target="_blank">Mac</a><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="iphone.html" target="_blank">iPhone</a><br>
+</div>
+<div class="menu2">
+<p style="font-size:12px;font-family:Arial;color:#7B7878" target="_blank"><b>Apple store</b></p><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="FieldTrip.html" target="_blank">Field Trip</a><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="AppleTradeIn.html" target="_blank">Apple Trade-In</a><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="Order.html" target="_blank">Order Status</a><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="ShoppingHelp.html" target="_blank">Shopping Help<a><br>
+</div>
+<div class="menu4">
+<p style="font-size:12px;font-family:Arial;color:#7B7878"  target="_blank"><b>About Apple</b></p><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="JobOpportunities.html" target="_blank">Job Opportunities</a><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="ContactApple.html" target="_blank">Contact Apple</a><br>
+<a onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'" style="font-size:12px;font-family:Arial;color:#7B7878" href="https://www.google.com.pk" target="_blank">Privacy Policy</a><br>
+</div>
+<br>
+<div class="bottomtext">
+<p>More ways to shop: Visit an Apple Store, call 1-800-MY-APPLE, or find a reseller.</p>
+<p>__________________________________________________________________________________________________________________________________________________________________________</p>
+<p>Copyright © 2019 Apple Inc. All rights reserved.</p>
+</div>
+</div>
+</div>
+</body>
+</html>

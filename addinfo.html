@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		                      
+	</head>                                           
+	<body>
+		<?php
+		$n=$_POST["nam"];
+		$min=$_POST["min"];
+		$max=$_POST["max"];
+		$caty=$_POST["cat"];
+		$dsn="mysql:dbname=homework";
+		$names="root";
+		$password="";
+		try
+		{
+			$conn=new PDO($dsn, $names, $password);
+			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		}
+		catch(PDOException $e)
+		{
+			echo"Connection failed:".$e->getMessage();
+		}
+		$sql="SELECT * from product where name='$n' AND price>'$min' AND price <'$max' AND category='$caty' ";
+		echo"<table border=2 width='30%'>";
+		$rowcount=0;
+		try{
+			$rows=$conn->query($sql);
+			foreach($rows as $row)
+			{
+				$rowcount++;
+				echo"<tr><td>".$row["pid"]."</td><td>".$row["name"]."</td><td>".$row["price"]."</td><td>".$row["category"]."</td><td>"."<img src=".$row["pic"]." alt='no image' height='140' width='100%'/>"."</td></tr>";
+			}
+		}
+		catch(PDOException $e)
+		{
+			echo"Query failed:".$e->getMessage();
+		}
+		if($rowcount==0)
+			echo"No data";
+		echo"</table>";
+		$conn=null;
+			
+	?>
+	</body>
+</html>
